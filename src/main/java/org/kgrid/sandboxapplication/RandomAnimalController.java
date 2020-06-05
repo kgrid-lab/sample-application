@@ -10,10 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/animal")
 public class RandomAnimalController {
 
-  @Autowired private RandomAnimalService randomAnimalService;
+  @Autowired
+  private RandomAnimalService randomAnimalService;
 
   @GetMapping
   public String getRandomAnimal() {
     return randomAnimalService.getRandomAnimal();
   }
+
 }
