@@ -11,4 +11,4 @@ workflows:
           filters:
             branches:
               ignore: master
-      - heroku/deploy_via_git
+      - heroku/deploy-via-git
