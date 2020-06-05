@@ -5,17 +5,19 @@ orbs:
   heroku: circleci/heroku@1.0.1
 
 workflows:
-  maven_test:
+  build: # build, test, resolve dependencies, and deploy if branch is master
     jobs:
-      - maven/test: # checkout, build, test, and upload test results
+      - maven/test
+      - heroku/deploy-via-git:
+          requires:
+            - maven/test
           filters:
             branches:
-              ignore: master
-      - heroku/deploy-via-git
-  earlymorning:
+              only: master
+  earlymorning: # build and deploy master at the crack-o-dawn
     triggers:
       - schedule:
-          cron: "14 20 * * *"
+          cron: "* 10 * * *"
           filters:
             branches:
               only:
