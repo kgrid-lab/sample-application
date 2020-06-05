@@ -5,6 +5,16 @@ orbs:
   heroku: circleci/heroku@1.0.1
 
 workflows:
+  earlymorning:
+    triggers:
+      - schedule:
+          cron: "5 4 * * *"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - heroku/deploy-to-git
   maven_test:
     jobs:
       - maven/test: # checkout, build, test, and upload test results
