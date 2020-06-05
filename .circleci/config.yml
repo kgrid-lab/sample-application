@@ -15,10 +15,13 @@ workflows:
   earlymorning:
     triggers:
       - schedule:
-          cron: "10 20 * * *"
+          cron: "14 20 * * *"
           filters:
             branches:
               only:
                 - master
     jobs:
-      - heroku/deploy-via-git
+      - maven/test
+      - heroku/deploy-via-git:
+          requires:
+            - maven/test
