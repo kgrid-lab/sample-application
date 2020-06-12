@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>org.kgrid</groupId>
 	<artifactId>sandbox-application</artifactId>
-	<version>0.0.2</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>sandbox-application</name>
 	<description>A Spring application meant for experimentation and dependency building</description>
 
@@ -74,6 +74,6 @@
 	</repositories>
 
   <scm>
-    <tag>sandbox-application-0.0.2</tag>
+    <tag>sandbox-application-0.0.1</tag>
   </scm>
 </project>
