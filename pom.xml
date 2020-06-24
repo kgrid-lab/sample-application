@@ -8,9 +8,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>org.kgrid</groupId>
-	<artifactId>sandbox-application</artifactId>
+	<artifactId>sample-application</artifactId>
 	<version>0.0.4-SNAPSHOT</version>
-	<name>sandbox-application</name>
+	<name>sample-application</name>
 	<description>A Spring application meant for experimentation and dependency building</description>
 
 	<properties>
@@ -34,8 +34,8 @@
 
 		<dependency>
 			<groupId>org.kgrid</groupId>
-			<artifactId>sandbox-dependency</artifactId>
-			<version>0.2.9</version>
+			<artifactId>sample-dependency</artifactId>
+			<version>0.2.12</version>
 		</dependency>
 	</dependencies>
 
@@ -74,10 +74,10 @@
 	</repositories>
 
 	<scm>
-		<url>https://github.com/kgrid-lab/sandbox-application</url>
-		<connection>scm:git:https://github.com/kgrid-lab/sandbox-application.git</connection>
-		<developerConnection>scm:git:https://github.com/kgrid-lab/sandbox-application.git</developerConnection>
-		<tag>sandbox-application-0.0.2</tag>
+		<url>https://github.com/kgrid-lab/sample-application</url>
+		<connection>scm:git:https://github.com/kgrid-lab/sample-application.git</connection>
+		<developerConnection>scm:git:https://github.com/kgrid-lab/sample-application.git</developerConnection>
+		<tag>sample-application-0.0.2</tag>
 	</scm>
 
 </project>

@@ -1,12 +1,12 @@
-package org.kgrid.sandboxapplication;
+package org.kgrid.SampleApplication;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SandboxApplication {
+public class SampleApplication {
 
   public static void main(String[] args) {
-    SpringApplication.run(SandboxApplication.class, args);
+    SpringApplication.run(SampleApplication.class, args);
   }
 }
