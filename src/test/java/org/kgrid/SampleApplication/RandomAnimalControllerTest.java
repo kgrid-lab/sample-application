@@ -1,12 +1,12 @@
-package org.kgrid.sandboxapplication;
+package org.kgrid.sampleapplication;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.kgrid.sandboxdependency.service.RandomAnimalService;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
+import org.kgrid.SampleDependency.Service.RandomAnimalService;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.verify;

@@ -1,10 +1,10 @@
-package org.kgrid.sandboxapplication;
+package org.kgrid.SampleApplication;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SandboxApplicationTests {
+class SampleApplicationTests {
 
 	@Test
 	void contextLoads() {
