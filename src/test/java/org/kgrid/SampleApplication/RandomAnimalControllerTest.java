@@ -1,4 +1,4 @@
-package org.kgrid.sampleapplication;
+package org.kgrid.SampleApplication;
 
 import org.junit.Before;
 import org.junit.Test;
